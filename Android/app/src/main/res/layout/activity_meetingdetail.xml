@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".meetingdetail">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="會議名稱"
+            android:textSize="28dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/ic_action_name"/>
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="會議資訊"
+             android:textSize="26dp"
+             android:textColor="@color/red"
+             android:layout_marginTop="95dp"
+             android:layout_marginLeft="110dp"/>
+
+        <RelativeLayout
+            android:id="@+id/infodetial"
+            android:layout_width="360dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loginbtn_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主持人："
+                android:textSize="26dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/chairname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="劉修宸"
+                android:textSize="22dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="125dp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="會議名稱："
+                android:textSize="26dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="65dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/confsname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="各部門季度報表"
+                android:textSize="22dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="68dp"
+                android:layout_marginLeft="150dp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="會議地點："
+                android:textSize="26dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="115dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/confsroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="會議室1"
+                android:textSize="22dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="118dp"
+                android:layout_marginLeft="150dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="會議時間："
+                android:textSize="26dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="165dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-01-08 14:25"
+                android:textSize="22dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="168dp"
+                android:layout_marginLeft="150dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="會議議程："
+                android:textSize="26dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="215dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出席"
+                android:textSize="22dp"
+                android:textColor="@color/red"
+                android:layout_marginTop="218dp"
+                android:layout_marginLeft="150dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/infodetial"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:text="進入會議"
+                android:textSize="28dp"
+                android:textColor="@drawable/logintext"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/loginbtn"
+                android:id="@+id/jitsi"
+                android:onClick="meet"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".index">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/relativecorner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi !"
+                android:id="@+id/namehi"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="林戚戚"
+                android:id="@+id/name"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/namehi"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="職稱"
+                android:id="@+id/position"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/name"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="資訊部部員"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/position"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            android:text="會議列表"
+            android:textSize="35dp"
+            android:id="@+id/list"
+            android:textColor="@color/red"
+            android:gravity="center"/>
+
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="290dp"
+            android:id="@+id/meeting1"
+            android:background="@drawable/loginbtn_normal"
+
+            >
+
+            <TextView
+                android:id="@+id/confs_name"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="會議名稱"
+                android:textSize="28dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/attendType"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="出席"
+                android:textSize="25dp"
+                android:layout_marginLeft="248dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/attend_icon"
+                />
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="2020-01-08 14:15"
+                android:textSize="28dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="100dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
